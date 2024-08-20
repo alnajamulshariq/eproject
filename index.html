@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- aos liabrary css link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- online cdn link of fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- online cdn link of bootstrap 5.3.2  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- external link of bootstrap 5.3.2  -->
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.css">
+        <!-- here we add our jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@500&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <!-- external CSS link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- here is our navbar section  -->
+    <nav>
+        <div class="logo">
+            <h4><a href="index.html"><span style="color: red; font-size: 3.5rem;">Aura</span>Watches</a></h4>
+        </div>
+        <ul>
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="humberger">&#9776;</label>
+
+            <div class="nav_links">
+
+                <div class="dropdown">
+                        <button id="dropdown_menu_btn" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Products
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="sportz.html">SPORTZ</a></li>
+                          <li><a class="dropdown-item" href="premier.html">PREMIER</a></li>
+                          <li><a class="dropdown-item" href="smart-watch.html">Smart Watches</a></li>
+                          <li><a class="dropdown-item" href="smart-band.html">Smart Bands</a></li>
+                          <li><a class="dropdown-item" href="clocks.html">Clocks</a></li>
+                          <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                        </ul>
+                      </div>
+                <li class="navlink"><a href="technology.html">Technology</a></li>
+                <li class="navlink"><a href="store_locator.html">Store Locator</a></li>
+                <li class="navlink"><a href="support.html">Support</a></li>
+                <li class="navlink"><a href="contact.html">Contact Us</a></li>
+                <li class="navlink"><a href="about.html">About</a></li>
+            </div>
+
+
+        </ul>
+    </nav>
+
+
+
+    <!-- adding carousel on home page  -->
+    <div class="container-fluid p-0 m-0" data-aos="zoom-out">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- here we add slide 1  -->
+            <div class="slide_card1_wrapper">
+                <div class="slide_content_1">
+                    <h3>PREMIER</h3>
+                    <h1>FEEL LUXURIOUS</h1>
+                    <button class="btn btn-outline-light slide1_btn_home_main" onclick="slide1()">SHOP NOW</button>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- here we add slide 2  -->
+            <div class="slide_card2_wrapper">
+                <div class="slide_content_2">
+                    <h3>SPORTZ</h3>
+                    <h1>FOR ATHELETES</h1>
+                    <button class="btn btn-outline-light slide2_btn_home_main" onclick="slide2()">SHOP NOW</button>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- here we add slide 3  -->
+            <div class="slide_card3_wrapper">
+                <div class="slide_content_3">
+                    <h3>SMART WATCHES</h3>
+                    <h1>GET SMART IN LIFE</h1>
+                    <button class="btn btn-outline-light slide3_btn_home_main" onclick="slide3()">SHOP NOW</button>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- here we add slide 4  -->
+            <div class="slide_card4_wrapper">
+                <div class="slide_content_4">
+                    <h3>SMART BANDS</h3>
+                    <h1>GET FIT IN LIFE</h1>
+                    <button class="btn btn-outline-light slide4_btn_home_main" onclick="slide4()">SHOP NOW</button>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- here we add slide 5  -->
+            <div class="slide_card5_wrapper">
+                <div class="slide_content_5">
+                    <h3>CLOCKS</h3>
+                    <h1>ANTIQUES CLOCKS</h1>
+                    <button class="btn btn-outline-light slide5_btn_home_main" onclick="slide5()">SHOP NOW</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+    
+
+
+
+    <!-- discover aura watches section  -->
+    <div class="container-fluid discover_watches" data-aos="fade-right">
+        <h1>Discover Aura Watches</h1>
+    </div>
+
+
+
+    
+<div class="container-fluid m-0 p-0 cat_1_2_parent" data-aos="zoom-in">
+    <div class="row m-0 p-0">
+        <div class="col-lg-6 col-md-6 col-sm-12 m-0 p-3">
+            <div class="cat_1">
+                <div class="content_cat_1">
+
+                    <h2>SPORTZ</h2>
+                    <P>Discover Our SPORTZ Watches</P>
+                   <button class="btn_cat_1" onclick="sportz()">DISCOVER NOW</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 m-0 p-3">
+            <div class="cat_2">
+                <div class="content_cat_2">
+
+                    <h2>PREMIER</h2>
+                    <P>Discover Our PREMIER Watches</P>
+                    <button class="btn_cat_2" onclick="premier()">DISCOVER NOW</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- here we add our new product section begins  -->
+<div class="container-fluid new_prd_hd" data-aos="fade-left">
+    <div class="row new_prd_heading"><h1>Explore New Products</h1>
+    </div>
+</div>
+    
+
+<!-- here we add a carousel for our new products  -->
+
+<div class="container" data-aos="zoom-out-down">
+    <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+        <div id="newsliderhp" class="carousel-inner">
+         
+         
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+
+
+
+<!-- here we add our new products in carousel  -->
+
+
+<!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-wrapper">
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np1.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-XY-ZZ-101</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np2.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-QR-DD-102</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np3.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-TP-568</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper">
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/slide4.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-XY-ZZ-101</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np6.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-PD-T8-09Q</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np5.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-GQ-06B</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper">
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np7.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-PW-YW-201</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np8.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>Model-BB-601-ZT</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+            <div class="slideparent">
+                <div class="slidecrd">
+                    <img src="./assets/np9.jpg" alt="">
+                </div>
+                <div class="slidecrdcontent">
+                    <h1>NEW PRODUCT</h1>
+                    <h3>ModEL-GT-506</h3>
+                    <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+
+  <!-- sample products card making  -->
+  <!-- <div class="prdcardparent">
+  <div class="prdcard">
+    <div class="prdimg">
+        <img src="./assets/np2.jpg" alt="">
+    </div>
+    <div class="prdcont">
+        <h5>Patek Phillipe</h5>
+        <h3>XZ-TTZ-007</h3>
+        <button class="prdbtn btn btn-outline-light">Details</button>
+        <p><s>$800</s> &nbsp;$789</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- sample slide card  -->
+<!-- <div class="slideparent">
+    <div class="slidecrd">
+        <img src="./assets/slide4.jpg" alt="">
+    </div>
+    <div class="slidecrdcontent">
+        <h1>NEW PRODUCT</h1>
+        <h3>Model-XY-ZZ-101</h3>
+        <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+    </div>
+</div> -->
+
+
+
+
+
+<!-- here we add our feature products work  -->
+
+<div class="container-fluid fet_prd_hd" data-aos="fade-left">
+    <div class="row fet_prd_heading"><h1>Feature Products</h1>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div id="fet_crd_row" class="row">
+        <!-- <div class="col">
+            <div class="prdcardparent">
+  <div class="prdcard">
+    <div class="prdimg">
+        <img src="./assets/np2.jpg" alt="">
+    </div>
+    <div class="prdcont">
+        <h5>Patek Phillipe</h5>
+        <h3>XZ-TTZ-007</h3>
+        <button class="prdbtn btn btn-outline-light">Details</button>
+        <p><s>$800</s> &nbsp;$789</p>
+    </div>
+  </div>
+</div>
+        </div> -->
+    </div>
+</div>
+
+<!-- sample slide card  -->
+
+                <!-- <div class="card-wrapper">
+                    <div class="slideparent">
+                        <div class="slidecrd">
+                            <img src="./assets/np1.jpg" alt="">
+                        </div>
+                        <div class="slidecrdcontent">
+                            <h1>NEW PRODUCT</h1>
+                            <h3>Model-XY-ZZ-101</h3>
+                            <button class="newsprdslidebtn btn btn-outline-light">DISCOVER</button>
+                        </div>
+                    </div>
+              </div> -->
+
+
+
+
+
+
+
+<!-- here we making our scroll to top button  -->
+<button id="top" type="button" class="btn btn-outline-light rounded-circle scroll-up "><i class="fa-solid fa-angle-up scroll-size"></i></button>
+ 
+  <script>
+    $(document).ready(function(){
+      $("#top").click(function(){
+        $("html,body").animate({
+          scrollTop:0
+        })
+      })
+      
+      
+    })
+    
+  </script>
+
+<!-- here is designing our product modal  -->
+  <!-- <div class="container modal_container">
+    <div class="img_modal_box">
+        
+        <div class="small_imgaes">
+            <div class="sm_img_parts"><img onclick="chimg1()" class="tinyimg" id="tiny_imga" src="./assets/fet2.jpg" alt="" ></div>
+            <div class="sm_img_parts"><img onclick="chimg2()" class="tinyimg" id="tiny_imgb" src="./assets/fet3.jpg" alt=""></div>
+            <div class="sm_img_parts"><img onclick="chimg3()" class="tinyimg" id="tiny_imgc" src="./assets/fet4.jpg" alt=""></div>
+            <div class="sm_img_parts"><img onclick="chimg4()" class="tinyimg" id="tiny_imgd" src="./assets/fet5.jpg" alt=""></div>
+        </div>
+        <div class="big_img_box"><img class="big_img" id="big_img" src="./assets/fet1.jpg" alt=""></div>
+    </div>
+    <div class="infobox">
+        <h1>CASIO G-SHOCK</h1>
+        <h3>Model-123</h3>
+        <h4>Availability (In Stock)</h4>
+        <h2>$259</h2>
+        <p class="modal_info_heading">Technoloy & Specification :</p>
+        <div class="specs_cont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquid delectus nihil laboriosam tempora maxime aspernatur, natus, autem reprehenderit id assumenda veniam fugiat. Similique laboriosam accusamus veritatis iste quas reiciendis.
+            Natus eligendi iure repudiandae similique id, aliquid maiores animi cumque voluptatibus vel eius cum obcaecati 
+        </div>
+        <div class="btn_modal">
+            <button class="btn btn-outline-light btn_modala" >SHOP NEARBY</button>
+            <button class="btn btn-outline-light btn_modalb" >DOWNLOAD DETAILS</button>
+        </div>
+
+    </div>
+  </div> -->
+
+
+  <!-- EXPERIMENT ON CUSTOM MODAL  -->
+
+
+  <!-- Modal -->
+<div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <!-- <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><span style="color: red; font-size: 2rem;">Aura</span>Watches</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container modal_container">
+                <div class="img_modal_box">
+                    
+                    <div class="small_imgaes">
+                        <div class="sm_img_parts"><img onclick="chimg1()" class="tinyimg" id="tiny_imga" src="./assets/fet2.jpg" alt="" ></div>
+                        <div class="sm_img_parts"><img onclick="chimg2()" class="tinyimg" id="tiny_imgb" src="./assets/fet3.jpg" alt=""></div>
+                        <div class="sm_img_parts"><img onclick="chimg3()" class="tinyimg" id="tiny_imgc" src="./assets/fet4.jpg" alt=""></div>
+                        <div class="sm_img_parts"><img onclick="chimg4()" class="tinyimg" id="tiny_imgd" src="./assets/fet5.jpg" alt=""></div>
+                    </div>
+                    <div class="big_img_box"><img class="big_img" id="big_img" src="./assets/fet1.jpg" alt=""></div>
+                </div>
+                <div class="infobox">
+                    <h1>CASIO G-SHOCK</h1>
+                    <h3>Model-123</h3>
+                    <h4>Availability (In Stock)</h4>
+                    <h2>$259</h2>
+                    <p class="modal_info_heading">Technoloy & Specification :</p>
+                    <div class="specs_cont">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquid delectus nihil laboriosam tempora maxime aspernatur, natus, autem reprehenderit id assumenda veniam fugiat. Similique laboriosam accusamus veritatis iste quas reiciendis.
+                        Natus eligendi iure repudiandae similique id, aliquid maiores animi cumque voluptatibus vel eius cum obcaecati 
+                    </div>
+                    <div class="btn_modal">
+                        <a href="store_locator.html"><button class="btn btn-outline-light btn_modala" >SHOP NEARBY</button></a>
+                        <a href=""><button class="btn btn-outline-light btn_modalb" >DOWNLOAD DETAILS</button></a>
+                        
+                        
+                    </div>
+            
+                </div>
+              </div>
+          ...
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+
+  <!-- button to trigger modal  -->
+  <!-- <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">TRIGGER MODAL</button> -->
+
+
+
+ <!-- start footer from here  -->
+
+ <footer data-aos="zoom-out">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-evenly">
+            <div  class="col col-lg-3 col-md-6 col-sm-12 ftr_cl_1">
+                <h1><span class="ftspan">Aura</span>Watches</h1>
+                <p>"At AuraWatches, we're more than just a watch store; we're your trusted timepiece destination. Discover a world of timeless elegance, precision, and style with our curated collection of watches.</p>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12 ftr_cl_2">
+                <ul class="ftr_links">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a><a class="linkhomeftr" href="index.html">Home</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-location-dot"></i></a><a class="linkhomeftr" href="store_locator.html">&nbsp;Store Locator</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-phone"></i></a><a class="linkhomeftr" href="contact.html">Contact</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-address-card"></i></a><a class="linkhomeftr" href="about.html">About</a></li>
+                </ul>
+
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12 ftr_cl_3">
+                <ul class="ftr_prd_links">
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="premier.html">PREMIER</a></li>
+                    <li><a href="sportz.html">SPORTZ</a></li>
+                    <li><a href="smart-watch.html">Smart Watches</a></li>
+                </ul>
+            </div>
+            <div class="col col-lg-2 col-md-6 col-sm-12 ftr_cl_4 social_icons">
+                
+                <a class="social_links" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social_links" href=""><i class="fa-brands fa-twitter"></i></a>
+                <a class="social_links" href=""><i class="fa-brands fa-instagram"></i></a>
+                
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  
+
+    <!-- online cdn js bootstrap 5.3.2  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- external js bootstrap 5.3.2 link  -->
+    <script src="./bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <!-- external js link  -->
+    <script src="index.js"></script>
+    <!-- aos liabrary js link  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1500,
+            offset: 300,
+        });
+      </script>
+</body>
+
+</html>
