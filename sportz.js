@@ -252,7 +252,11 @@ function sppmt(i) {modalsp.innerHTML=
                 </div>
                 <div class="btn_modal">
                     <a href="store_locator.html"><button class="btn btn-outline-light btn_modala" >SHOP NEARBY</button></a>
+<<<<<<< HEAD
                     <a href="./assets/AURA WATCHES (1).pdf" download="./assets/AURA WATCHES (1).pdf"><button class="btn btn-outline-light btn_modalb" >DOWNLOAD DETAILS</button></a>
+=======
+                    <a href=""><button class="btn btn-outline-light btn_modalb" >DOWNLOAD DETAILS</button></a>
+>>>>>>> 8de47d0dce0b9ab9ee5db7b6ba4cb7142138beab
                     
                     
                 </div>
@@ -465,7 +469,11 @@ function spmpmt(i) {modalsp.innerHTML=
                 </div>
                 <div class="btn_modal">
                     <a href="store_locator.html"><button class="btn btn-outline-light btn_modala" >SHOP NEARBY</button></a>
+<<<<<<< HEAD
                     <a href="./assets/AURA WATCHES (1).pdf" download="./assets/AURA WATCHES (1).pdf"><button class="btn btn-outline-light btn_modalb" >DOWNLOAD DETAILS</button></a>
+=======
+                    <a href=""><button class="btn btn-outline-light btn_modalb" >DOWNLOAD DETAILS</button></a>
+>>>>>>> 8de47d0dce0b9ab9ee5db7b6ba4cb7142138beab
                     
                     
                 </div>
